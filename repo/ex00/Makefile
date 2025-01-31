@@ -1,4 +1,4 @@
-NAME = fixed
+NAME = fixedPoint
 FLAGS = -Wall -Wextra -Werror -std=c++98
 SRCS = main.cpp Fixed.cpp
 OBJS = $(SRCS:.cpp=.o)
@@ -19,7 +19,7 @@ fclean : clean
 
 re : fclean all
 
-test : all
+test : re
 	./$(NAME)
 
 .PHONY: all clean fclean re test
