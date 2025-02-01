@@ -236,3 +236,30 @@ on modifie l'objet et on renvoie une copie de l'objet tel qu'il était avant la 
 
 int est un paramètre factice qui permet de différencier les 2 définitions, il n’est pas utilisé, c’est juste une convention syntaxique
 -
+
+-
+std::cout << __PRETTY_FUNCTION__ << std::endl;
+
+pour faire un message de log simple. ça affiche la fonction qui est appelée
+-
+
+
+
+-
+constructeur à partir d'un float : roundf(f * (1 << _fractionalBits))
+
+pourquoi arrondir ?
+
+exemple :
+
+on a 2 bits pour la partie fractionnaire et qu'on veut représenter 1.9
+
+(1 << 2) = 4
+
+1.9 * 4 = 7.6
+
+si on arrondi pas, on va coder le nombre par 1|11
+et si on arrondi, on va coder le nombre par 10|00
+
+or, 1,11 = 1.75 et 10,0 = 2
+-

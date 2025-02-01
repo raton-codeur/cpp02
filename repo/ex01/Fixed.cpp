@@ -5,10 +5,10 @@ Fixed::Fixed() : _rawValue(0)
 	std::cout << "default constructor called" << std::endl;
 }
 
-Fixed::Fixed(const Fixed& fixed) :
-	_rawValue(fixed._rawValue)
+Fixed::Fixed(const Fixed& fixed)
 {
 	std::cout << "copy constructor called" << std::endl;
+	*this = fixed;
 }
 
 Fixed& Fixed::operator=(const Fixed& fixed)
