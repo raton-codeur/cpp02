@@ -13,8 +13,12 @@ class Point
 				Point(const Point& point);
 		Point&	operator=(const Point& point);
 				~Point();
+		Fixed	getX() const;
+		Fixed	getY() const;
 };
 
-bool bsp(const Point a, const Point b, const Point c, const Point point);
+std::ostream& operator<<(std::ostream& os, const Point& p);
+
+bool bsp(const Point a, const Point b, const Point c, const Point p);
 
 #endif
