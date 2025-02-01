@@ -34,5 +34,6 @@ int main()
 
 	/* boundary */
 	testPoint(a, b, c, Point(4.7, 3.26));
+	std::cout << "last triangle : ";
 	testPoint(Point(0, 0), Point(1, 0), Point(1, 1), Point(0.5, 0.5));
 }
