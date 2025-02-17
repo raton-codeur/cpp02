@@ -13,7 +13,5 @@ int main()
 	std::cout << "b : " << b << std::endl;
 
 	std::cout << "max(a, b) : " << Fixed::max(a, b) << std::endl;
-
 	std::cout << "b + 6 : " << b + 6 << std::endl;
-	std::cout << "b / 0 : " << b / 0 << std::endl;
 }
