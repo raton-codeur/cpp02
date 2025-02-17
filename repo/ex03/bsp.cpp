@@ -7,8 +7,8 @@ Fixed crossProduct(const Point& a, const Point& b, const Point& c)
 
 bool bsp(const Point a, const Point b, const Point c, const Point p)
 {
-	Fixed cp1 = crossProduct(a, b, p);
-	Fixed cp2 = crossProduct(b, c, p);
-	Fixed cp3 = crossProduct(c, a, p);
+	Fixed cp1(crossProduct(a, b, p));
+	Fixed cp2(crossProduct(b, c, p));
+	Fixed cp3(crossProduct(c, a, p));
 	return (cp1 > 0 && cp2 > 0 && cp3 > 0) || (cp1 < 0 && cp2 < 0 && cp3 < 0);
 }
