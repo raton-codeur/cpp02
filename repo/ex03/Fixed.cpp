@@ -5,8 +5,7 @@ Fixed::Fixed() : _rawValue(0)
 	// std::cout << "default constructor called" << std::endl;
 }
 
-Fixed::Fixed(const Fixed& fixed) :
-	_rawValue(fixed._rawValue)
+Fixed::Fixed(const Fixed& fixed) : _rawValue(fixed._rawValue)
 {
 	// std::cout << "copy constructor called" << std::endl;
 }
@@ -28,7 +27,7 @@ int Fixed::getRawBits() const
 	return _rawValue;
 }
 
-void Fixed::setRawBits(int const raw)
+void Fixed::setRawBits(const int raw)
 {
 	_rawValue = raw;
 }
